@@ -8,5 +8,11 @@ if (isset($_POST['comment'])) {
 
     $insert_cmt = "INSERT into comment(userId,comment,rating) values('$id','$contentCmt','$rating')";
     $success =  mysqli_query($conn, $insert_cmt);
-    header('location: index.php');
+    if($success){
+        echo "thành công";
+    }
+    else{
+        echo "thất bại";
+    }
+   
 }
