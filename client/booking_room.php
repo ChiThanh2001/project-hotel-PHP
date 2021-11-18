@@ -29,7 +29,7 @@ if(isset($_POST['booking']) && isset($_SESSION['user'])) {
                 header('location: profile-user.php?route=order');
 }
 else{
-    header('location:login-users.php');
+    header('location:../admin/login.php');
 }
 
 
